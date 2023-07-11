@@ -6,7 +6,7 @@ export class ConfirmPasswordDto {
   @MaxLength(50)
   @Matches(/(?:(?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/, {
     message:
-      'The password must have a Uppercase, lowercase letter and a number',
+      'La contraseña debe tener una letra mayúscula, minúscula y un número',
   })
   password: string;
 }
